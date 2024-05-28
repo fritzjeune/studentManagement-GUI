@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <VBox prefHeight="343.0" prefWidth="602.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course Profil">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Code" />
+            <Text layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="001" />
+            <Text layoutX="10.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name" />
+            <Text layoutX="10.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Math" />
+            <Text layoutX="10.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registered Students">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Text>
+            <TableView prefHeight="193.0" prefWidth="480.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Student ID" />
+                <TableColumn prefWidth="75.0" text="Last name" />
+                  <TableColumn prefWidth="75.0" text="First name" />
+                  <TableColumn prefWidth="75.0" text="Grade" />
+                  <TableColumn prefWidth="75.0" text="Status" />
+              </columns>
+            </TableView>
+            <Button mnemonicParsing="false" text="Register a Student " />
+            <Button layoutX="10.0" layoutY="315.0" mnemonicParsing="false" text="Edit Course" />
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <VBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

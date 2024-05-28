@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ayitigenius.studentmanagegui.StudentProfilController">
+    <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <left>
+              <VBox alignment="CENTER" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+              <VBox prefHeight="349.0" prefWidth="607.0" BorderPane.alignment="CENTER">
+                  <children>
+                      <Text fx:id="firstName" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="206.13671875">
+                          <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                          </font>
+                      </Text>
+                      <Text fx:id="lastName" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="206.13671875">
+                          <font>
+                              <Font name="Berlin Sans FB" size="24.0" />
+                          </font>
+                      </Text>
+                      <VBox>
+                          <children>
+                              <Label text="OverAll Grade" />
+                              <Text fx:id="overAllGrade" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                          </children>
+                      </VBox>
+                      <VBox>
+                          <children>
+                              <Label text="Age" />
+                              <Text fx:id="age" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                          </children>
+                      </VBox>
+                      <VBox prefHeight="231.0" prefWidth="607.0">
+                          <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Courses and Grades">
+                                  <font>
+                                      <Font name="Berlin Sans FB" size="14.0" />
+                                  </font>
+                              </Text>
+                              <TableView fx:id="courseTable" prefHeight="150.0" prefWidth="607.0">
+                                  <columns>
+                                      <TableColumn fx:id="courseCode" prefWidth="75.0" text="Course Code" />
+                                      <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+                                      <TableColumn fx:id="grade" prefWidth="75.0" text="Grade" />
+                                  </columns>
+                              </TableView>
+                        <ChoiceBox fx:id="courseList" prefWidth="150.0" />
+                        <Button fx:id="registerCourseBtn" mnemonicParsing="false" text="Add Course" />
+                          </children>
+                      </VBox>
+                  </children>
+              </VBox>
+         </right>
+         <top>
+            <VBox prefHeight="37.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="searchInput" prefHeight="25.0" prefWidth="524.0" promptText="Enter Student Code" />
+                  <Button mnemonicParsing="false" onAction="#getStudent" text="Search" />
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+    </children>
+</AnchorPane>
