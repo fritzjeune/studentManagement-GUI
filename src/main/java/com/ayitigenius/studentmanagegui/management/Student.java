@@ -78,6 +78,21 @@ public class Student {
         return this.enrolledCourses;
     }
 
+    /**
+     * This method will check if a particular course already exist in the student profil
+     * or course list
+     * @param course
+     * @return a boolean
+     */
+    public boolean checkEnrolledCourse(Course course) {
+        for (StudentCourse sc : enrolledCourses) {
+            if (sc.getCourse().equals(course)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     // A method that I add to be able to print the student details
     public void printStudentDetails() {
         ArrayList<StudentCourse> courses = this.getEnrolledCourses();

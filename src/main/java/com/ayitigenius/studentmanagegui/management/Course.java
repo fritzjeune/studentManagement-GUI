@@ -1,11 +1,14 @@
 package com.ayitigenius.studentmanagegui.management;
 
+import java.util.ArrayList;
+
 public class Course {
     public int totalEnrolledStudent;
     public static int courseTotal = 0;
     private String name;
     private String courseCode;
     private int maxCapacity;
+    private ArrayList<Student> enrolledStudents;
 
     Course (String courseCode, String name, int maxCapacity){
         courseTotal++;
@@ -13,6 +16,7 @@ public class Course {
         this.name = name;
         this.maxCapacity = maxCapacity;
         this.totalEnrolledStudent = 0;
+        this.enrolledStudents = new ArrayList<>();
     }
 
     public String getName() {
@@ -46,4 +50,18 @@ public class Course {
     public void setTotalEnrolledStudent(int totalEnrolledStudent) {
         this.totalEnrolledStudent = totalEnrolledStudent;
     }
+
+    public ArrayList<Student> getEnrolledStudents() {
+        return enrolledStudents;
+    }
+    public boolean addEnrolledStudents(Student student) {
+        if (enrolledStudents.contains(student)) {
+            System.out.println("Student already enrolled");
+            return false;
+        }
+        enrolledStudents.add(student);
+        return true;
+    }
+
+
 }

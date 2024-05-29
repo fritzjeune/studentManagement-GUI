@@ -13,19 +13,25 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import static javafx.collections.FXCollections.observableList;
 
 public class StudentProfilController implements Initializable {
+
+    private Student student;
+    // table fields to list enrolled courses
     @FXML
     public TableView<StudentCourse> courseTable;
     @FXML
-    public TableColumn<Course, String> courseCode;
+    public TableColumn<StudentCourse, String> courseCode;
     @FXML
-    public TableColumn<Course, String> name;
+    public TableColumn<StudentCourse, String> name;
     @FXML
     public TableColumn<StudentCourse, Double> grade;
+
+    // Fields of the student profile
     @FXML
     public Text firstName;
     @FXML
@@ -34,6 +40,8 @@ public class StudentProfilController implements Initializable {
     public Text overAllGrade;
     @FXML
     public Text age;
+
+    // Fields for course enrollment
     @FXML
     public TextField searchInput;
     @FXML
@@ -46,7 +54,7 @@ public class StudentProfilController implements Initializable {
         if (searchInput.getText().isEmpty()) {
             System.out.println("Not Found");
         }
-        Student student = CourseManagement.getStudentById(Integer.parseInt(searchInput.getText()));
+        student = CourseManagement.getStudentById(Integer.parseInt(searchInput.getText()));
 
         if (student != null) {
             firstName.setText(student.getFirstname());
@@ -56,21 +64,46 @@ public class StudentProfilController implements Initializable {
 
             // to get nested column
             // https://stackoverflow.com/questions/24769296/binding-nested-object-properties-to-tableview-in-javafx
-            courseCode.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getCourseCode()));
-            name.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getName()));
+            courseCode.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getCourse().getCourseCode()));
+            name.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getCourse().getName()));
             grade.setCellValueFactory(new PropertyValueFactory<StudentCourse, Double>("grade"));
 
             courseTable.setItems(observableList(student.getEnrolledCourses()));
         }
     }
 
+    @FXML
+    // Method to handler the enrroll to course button in the Student Profil
+    public void handleEnrollment (ActionEvent event) {
+        if (courseList.getSelectionModel().getSelectedItem() != null) {
+            boolean added = CourseManagement.enrollStudent(student.getID(), courseList.getValue().split(" - ")[0]);
+            if (added) {
+                System.out.println("Course Added");
+            } else {
+                System.out.println("Course Not Added");
+            }
+        } else {
+            System.out.println("Select a course from the list first");
+        }
+    }
 
-    public void handleEnrollement (ActionEvent event) {
+    @FXML
+    public void calculateOverAllGrade(ActionEvent event) {
+        if (student != null) {
+            System.out.println(CourseManagement.calculateOverallGrade(student));
+
+        } else {
+            System.out.println("No Student Selected");
+        }
 
     }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-
+        ArrayList<String> courseString = new ArrayList<>();
+        for( Course course : CourseManagement.courseList) {
+            courseString.add(course.getCourseCode() + " - " + course.getName());
+        }
+        courseList.getItems().setAll(courseString);
     }
 }

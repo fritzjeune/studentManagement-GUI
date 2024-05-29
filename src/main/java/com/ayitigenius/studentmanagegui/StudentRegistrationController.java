@@ -30,12 +30,17 @@ public class StudentRegistrationController implements Initializable {
         if (last_name.getText() == null || first_name.getText() == null || age.getText() == null) {
             warnings.setText("Please fill all the fields");
         }
-        CourseManagement.registerStudent(last_name.getText(), first_name.getText(), Integer.parseInt(age.getText()));
-        warnings.setText("Student registration successful");
 
-        last_name.clear();
-        first_name.clear();
-        age.clear();
+        try {
+            CourseManagement.registerStudent(last_name.getText(), first_name.getText(), Integer.parseInt(age.getText()));
+            warnings.setText("Student registration successful");
+
+            last_name.clear();
+            first_name.clear();
+            age.clear();
+        } catch (NumberFormatException nfe) {
+            warnings.setText("Invalid value for age!");
+        }
     }
 
     @Override

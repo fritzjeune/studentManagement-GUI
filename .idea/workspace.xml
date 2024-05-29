@@ -4,42 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0945ec8-a630-4758-948d-98916e12fbd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/CourseProfileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/CourseRegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/FXMLDocumentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/FxmlLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/MainPaneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/StudentProfilController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/StudentRegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/CourseList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/CourseManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/StudentCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/StudentList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/course-profile.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/course-registration.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/list-course.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/list-student.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/main-pane.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/student-profil.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/student-registration.fxml" afterDir="false" />
+    <list default="true" id="d0945ec8-a630-4758-948d-98916e12fbd3" name="Changes" comment="Added courses , Student, list course, list Student and get student profil">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/CourseProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/CourseProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/CourseRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/CourseRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/StudentProfilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/StudentProfilController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/StudentRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/StudentRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/CourseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/CourseManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ayitigenius/studentmanagegui/management/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/course-profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/course-profile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/student-profil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ayitigenius/studentmanagegui/student-profil.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "fritzjeune"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/fritzjeune/studentManagement-GUI.git",
+    "accountId": "e23cad7e-41d3-42d9-817d-844f4b929c0c"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -107,6 +94,26 @@
       <recent name="com.ayitigenius.studentmanagegui" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ayitigenius.studentmanagegui.MainApplication" />
+      <module name="StudentManage-GUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ayitigenius.studentmanagegui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -124,12 +131,25 @@
       <option name="presentableId" value="Default" />
       <updated>1716817087362</updated>
       <workItem from="1716817088390" duration="348000" />
-      <workItem from="1716818580659" duration="32064000" />
+      <workItem from="1716818580659" duration="40016000" />
     </task>
+    <task id="LOCAL-00001" summary="Added courses , Student, list course, list Student and get student profil">
+      <option name="closed" value="true" />
+      <created>1716899076287</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716899076287</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added courses , Student, list course, list Student and get student profil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added courses , Student, list course, list Student and get student profil" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -70,7 +70,14 @@ public class CourseManagement {
         if (student == null || course == null) {
             return false;
         }
+
+        if (student.checkEnrolledCourse(course))  {
+            System.out.println("Student already enrolled in this course");
+            return false;
+        }
+
         student.enrollToCourse(course);
+        course.addEnrolledStudents(student);
         return true;
     }
 

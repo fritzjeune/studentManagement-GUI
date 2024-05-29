@@ -25,11 +25,17 @@ public class CourseRegistrationController {
         if (course_code.getText() == null || course_name.getText() == null || max_capacity.getText() == null) {
             warnings.setText("Please fill all the fields");
         }
-        CourseManagement.addCourse(course_code.getText(), course_name.getText(), Integer.parseInt(max_capacity.getText()));
-        warnings.setText( course_name.getText() + " Course added Successfully");
 
-        course_code.clear();
-        course_name.clear();
-        max_capacity.clear();
+        try{
+            CourseManagement.addCourse(course_code.getText(), course_name.getText(), Integer.parseInt(max_capacity.getText()));
+            warnings.setText( course_name.getText() + " Course added Successfully");
+
+            course_code.clear();
+            course_name.clear();
+            max_capacity.clear();
+        } catch (NumberFormatException nfe) {
+            warnings.setText("Invalid value for max capacity, Must be a number");
+        }
+
     }
 }

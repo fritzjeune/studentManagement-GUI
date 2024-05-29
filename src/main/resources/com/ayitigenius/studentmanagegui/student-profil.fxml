@@ -50,7 +50,8 @@
                                   </columns>
                               </TableView>
                         <ChoiceBox fx:id="courseList" prefWidth="150.0" />
-                        <Button fx:id="registerCourseBtn" mnemonicParsing="false" text="Add Course" />
+                        <Button fx:id="registerCourseBtn" mnemonicParsing="false" onAction="#handleEnrollment" text="Add Course" />
+                              <Button fx:id="CalculateOAGBtn" mnemonicParsing="false" onAction="#calculateOverAllGrade" text="Add Course" />
                           </children>
                       </VBox>
                   </children>
